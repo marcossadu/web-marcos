@@ -9,16 +9,18 @@
 
 body {
   background-color: black;
+  width: 100%;
+
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: rgb(41, 41, 41);
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: rgb(41, 41, 41);
 }
