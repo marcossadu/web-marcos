@@ -7,11 +7,48 @@
   color: white;
 }
 
+body {
+  background-color: black;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(41, 41, 41);
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(41, 41, 41);
+}
+
+h4 {
+  font-size: 1.6rem;
+  color: rgb(41, 41, 41);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
 /* ------------------------------ MAIN SECTION ------------------------------ */
 .container_main {
-  background-color: black;
-  height: 68vh;
+  position: relative;
+  height: auto;
   padding: 60px 30px;
+}
+
+.container_main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/main_photo.jpg);
+  background-size: cover;
+  background-position: 30% center; /* Ajusta el valor para mover la imagen */
+  opacity: 0.4; /* Ajusta la opacidad según tu preferencia */
+  z-index: -1;
 }
 
 .container_main h1 {
@@ -28,6 +65,7 @@
 
 .container_main button {
   width: 100%;
+  border: 3px solid rgb(42, 75, 240);
 }
 
 /* --------------------------- TESTIMONIAL SECTION -------------------------- */
@@ -35,7 +73,6 @@
 .container_testimonial {
   background-color: rgb(214, 214, 214);
   padding: 60px 30px;
-
 }
 
 .container_testimonial p:first-child {
@@ -47,4 +84,112 @@
 .container_testimonial p:last-child {
   color: rgb(41, 41, 41);
   font-size: 1.2rem;
+}
+
+/* ----------------------------- ESPECIALIDADES ----------------------------- */
+
+.container_especialidades {
+  padding: 60px 30px;
+  background-color: white;
+}
+
+.container_especialidades ul {
+  margin-top: 20px;
+}
+
+.container_especialidades ul li {
+  padding: 5px;
+  font-weight: 400;
+}
+
+.container_especialidades h2,
+.container_especialidades ul li {
+  color: rgb(41, 41, 41);
+}
+
+.container_especialidades img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* -------------------------- EMERITA LEGAL SECTION ------------------------- */
+.container_emerita {
+  padding: 60px 30px;
+  background-color: white;
+}
+
+.container_emerita p {
+  color: rgb(41, 41, 41);
+  font-size: 0.9rem;
+}
+
+.container_emerita button {
+  width: 100%;
+  border: 2.5px solid rgb(42, 75, 240);
+}
+
+.container_emerita img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* ---------------------- CLIENTES PRINCIPALES SECTION ---------------------- */
+
+.container_clientes {
+  background-color: rgb(214, 214, 214);
+  padding: 60px 30px;
+}
+
+.container_clientes img {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ------------------------------- FORMULARIO ------------------------------- */
+
+.container_form {
+  background-color: white;
+  padding: 60px 30px;
+}
+
+.container_form label,
+.container_form p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.container_form form {
+    margin-top: 30px;
+}
+
+.form_bold {
+    font-weight: 700;
+    color: black;
+}
+
+.container_form button {
+    width: 100%;
+    border: 2.5px solid rgb(42, 75, 240);
+}
+
+#exampleFormControlInput1,
+#exampleFormControlInput2,
+#formControlInput3 {
+    background-color: rgb(214, 214, 214);
+}
+
+/* ----------------------------- FOOTER SECTION ----------------------------- */
+
+.container_footer {
+    background-color: rgb(107, 107, 107);
+    padding: 40px;
+}
+
+.container_footer h4 {
+    color: white;
+}
+
+.container_footer p {
+    color: rgb(255, 255, 255);
 }
