@@ -15,32 +15,34 @@
   </head>
   <body>
     <!-- ---------------------------- BARRA DE MENÚ ---------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-primary p-4">
+    <nav class="navbar navbar-expand-lg p-4">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bufete Sánchez Meya</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div style="display:flex; justify-content:space-between;">
+          <a class="navbar-brand text-white" href="#">Bufete Sánchez Meya</a>
+          <button
+            class="navbar-toggler hamburguerX"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active text-white" aria-current="page" href="#"
                 >Servicios</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quienes somos</a>
+              <a class="nav-link text-white" href="#">Quienes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nuestra historia</a>
+              <a class="nav-link text-white" href="#">Nuestra historia</a>
             </li>
           </ul>
         </div>
@@ -72,47 +74,37 @@
     <!-- --------------------- ESPECIALIDADES Y SERVICIOS ---------------------- -->
     <section>
       <!-- --------------------- ESPECIALIDADES --------------------- -->
-      <article class="container_especialidades">
+      <article class="container_especialidades1">
         <h2>NUESTRAS ESPECIALIDADES</h2>
-        <ul>
-          <li>Derecho de responsabilidad civil</li>
-          <li>Derecho de daños</li>
-          <li>Derecho del seguro</li>
-        </ul>
-        <img
+        <p>- Derecho de RC - Derecho de daños  - Derecho del seguro</p>
+        <!-- <img
           src="./assets/images/especialidades_photo.jpg"
           alt="especialidades"
-        />
+        /> -->
       </article>
-      <article class="container_especialidades">
-        <h2>NUESTROS SERVICIOS</h2>
+      <article class="container_servicios">
+        <h2>Nuestros Servicios</h2>
         <ul>
-          <li>Responsabilidad civil en todas las jurisdicciones</li>
-          <li>Daños por aguas</li>
-          <li>Daños por incendios</li>
-          <li>Daños eléctricos</li>
-          <li>Responsabilidad civil profesional</li>
-          <li>Reclamación y defensa por accidentes</li>
-          <li>Responsabilidad civil decenal y de la edificación</li>
-          <li>Responsabilidad civil patronal por accidentes de trabajo</li>
+          <li>Responsabilidad Civil:</li>
+          <li>Derecho de Daños</li>
+          <li>Derecho del Seguro</li>
+          <li>Responsabilidad Civil Profesional</li>
+          <li>Reclamación y Defensa por Accidentes</li>
+          <li>Responsabilidad Civil Decenal y de la Edificación</li>
+          <li>Responsabilidad Civil Patronal</li>
           <li>
-            Reclamación y defensa por daños (Responsabilidad por productos
-            defectuosos)
+            Responsabilidad civil autos y accidentes de tráfico
           </li>
-          <li>
-            Responsabilidad civil autos y accidentes de tráfico (A la espera de
-            nombre profesional)
-          </li>
-          <li>Reclamación de seguros de vida</li>
-          <li>Reclamación seguros de accidentes</li>
+          <li>Reclamación Seguros</li>
+          <li>Reclamación y Defensa por Daños (Responsabilidad por Productos Defectuosos)</li>
         </ul>
-        <img src="./assets/images/pic02.jpg" alt="especialidades" />
+        <!-- <img src="./assets/images/pic02.jpg" alt="especialidades" /> -->
       </article>
     </section>
 
     <!-- ---------------------------- EMERITA LEGAL SECTION ---------------------------- -->
     <section class="container_emerita">
-      <h2>ABOGADOS DE ÉLITE EN BARCELONA</h2>
+      <h2>ABOGADOS DE PRESTIGIO EN BARCELONA</h2>
       <h3>
         Certificados como los mejores por análisis de más de 200 sentencias de
         nuestro bufete.
@@ -122,6 +114,7 @@
         tribunales en diferentes casos, con el fin de identificar patrones y
         tendencias en la jurisprudencia. Este análisis es muy útil para evaluar
         la eficacia de los abogados y bufetes en la resolución de casos. <br />
+        <br/>
         En Bufete Sánchez Meya, hemos sido evaluados por Emérita Legal, la cual
         ha analizado más de 200 sentencias en las que hemos participado. Esto ha
         permitido certificar que nuestros abogados son los mejores de Barcelona
@@ -130,14 +123,16 @@
         de éxito en sus casos.
       </p>
       <button type="button" class="btn btn-outline-primary p-2">LINK</button>
-      <img src="./assets/images/pic02.jpg" alt="" />
+      <img src="./assets/images/emeritas.png" alt="emeritas foto" />
     </section>
 
     <!-- ------------------------ PRINCIPALES CLIENTES ------------------------- -->
     <section class="container_clientes">
       <h2>Nuestros principales clientes</h2>
-      <img src="./assets/images/pic02.jpg" alt="cliente1" />
-      <img src="./assets/images/pic02.jpg" alt="cliente2" />
+      <img src="./assets/images/catalana-occidente.png" alt="cliente1" />
+      <img src="./assets/images/adeslas.jpg" alt="cliente2" />
+      <img src="./assets/images/asefa.jpg" alt="cliente3" />
+
     </section>
 
     <!-- ----------------------- FORMULARIO DE CONTACTO ------------------------ -->
@@ -149,7 +144,9 @@
       </p>
       <p>
         +34 93 321 04 96 <br />
-        secretaria@bufetesanchezmeya.es <br />
+        <br/>
+        <span style="text-decoration: underline; color:black;">secretaria@bufetesanchezmeya.es</span> <br />
+        <br/>
         Avenida de Sarriá 30 6º 1ª, Barcelona
       </p>
       <form action="">

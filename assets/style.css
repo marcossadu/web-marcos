@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
+:root {
+  --azul: #003d5f;
+  --azulClaro: #0089d1;
+  --grisFondo: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +15,18 @@
 
 body {
   background-color: black;
-  width: 100%;
+    
 
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: rgb(41, 41, 41);
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: rgb(41, 41, 41);
 }
@@ -31,6 +37,17 @@ h4 {
   font-weight: 700;
   margin-bottom: 25px;
 }
+/* --------------------------------- HEADER --------------------------------- */
+
+.navbar {
+  background-color: var(--azul);
+}
+
+
+.hamburguerX {
+  margin-left: 70px;
+}
+
 
 /* ------------------------------ MAIN SECTION ------------------------------ */
 .container_main {
@@ -68,7 +85,8 @@ h4 {
 
 .container_main button {
   width: 100%;
-  border: 3px solid rgb(42, 75, 240);
+  border: 3px solid var(--azulClaro);
+  color: var(--azulClaro);
 }
 
 /* --------------------------- TESTIMONIAL SECTION -------------------------- */
@@ -93,37 +111,76 @@ h4 {
 
 /* ----------------------------- ESPECIALIDADES ----------------------------- */
 
-.container_especialidades {
+.container_especialidades1 {
   padding: 60px 30px;
-  background-color: white;
+  position: relative;
+  text-align: center;
+  /* height: 300px; */
+  
+}
+
+.container_especialidades1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-image: url(./images/especialidades_photo.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Ajusta la opacidad según tu preferencia */
+  z-index: -1;
 }
 
-.container_especialidades ul {
+.container_especialidades1 p {
   margin-top: 20px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
-.container_especialidades ul li {
-  padding: 5px;
+.container_especialidades1 h2 {
+  font-size: 2.4rem;
   font-weight: 400;
 }
 
-.container_especialidades h2,
-.container_especialidades ul li {
-  color: rgb(41, 41, 41);
+.container_especialidades1 h2,
+.container_especialidades1 p {
+  color: rgb(255, 255, 255);
 }
 
-.container_especialidades img {
+.container_especialidades1 img {
   margin-top: 30px;
   width: 100%;
 }
 
+/* ---------------------------- SERVICIOS SECCION --------------------------- */
+.container_servicios {
+  padding: 60px 30px;
+  background-color: var(--grisFondo);
+}
+
+.container_servicios h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container_servicios ul li {
+  list-style: none;
+  padding: 0px 0px 20px 0px;
+  font-size: 1.7rem;
+}
 /* -------------------------- EMERITA LEGAL SECTION ------------------------- */
 .container_emerita {
   padding: 60px 30px;
   background-color: white;
   width: 100%;
+}
 
+.container_emerita h3 {
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
 .container_emerita p {
@@ -133,7 +190,8 @@ h4 {
 
 .container_emerita button {
   width: 100%;
-  border: 2.5px solid rgb(42, 75, 240);
+  border: 2.5px solid var(--azulClaro);
+  margin-top: 20px;
 }
 
 .container_emerita img {
@@ -144,7 +202,7 @@ h4 {
 /* ---------------------- CLIENTES PRINCIPALES SECTION ---------------------- */
 
 .container_clientes {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(232, 232, 232);
   padding: 60px 30px;
   width: 100%;
 
@@ -154,6 +212,8 @@ h4 {
   margin-top: 30px;
   width: 100%;
   border-radius: 20px;
+  border: 20px solid white;
+  /* padding: 50px; */
 }
 
 /* ------------------------------- FORMULARIO ------------------------------- */
@@ -182,13 +242,13 @@ h4 {
 
 .container_form button {
     width: 100%;
-    border: 2.5px solid rgb(42, 75, 240);
+    border: 2.5px solid var(--azulClaro);
 }
 
 #exampleFormControlInput1,
 #exampleFormControlInput2,
 #formControlInput3 {
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(232, 232, 232);
 }
 
 /* ----------------------------- FOOTER SECTION ----------------------------- */
@@ -206,4 +266,10 @@ h4 {
 
 .container_footer p {
     color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1280px) {
+  /* .menu {
+    background: green;
+  } */
 }
