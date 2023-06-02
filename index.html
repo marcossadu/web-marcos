@@ -15,9 +15,9 @@
   </head>
   <body>
     <!-- ---------------------------- BARRA DE MENÚ ---------------------------- -->
-    <nav class="navbar navbar-expand-lg p-4">
+    <nav class="navbar navbar-expand-lg p-4 fixed-top">
       <div class="container-fluid">
-        <div style="display:flex; justify-content:space-between;">
+        <div style="display: flex; justify-content: space-between">
           <a class="navbar-brand text-white" href="#">Bufete Sánchez Meya</a>
           <button
             class="navbar-toggler hamburguerX"
@@ -28,21 +28,21 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon "></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="#"
-                >Servicios</a
+                >SERVICIOS</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Quienes somos</a>
+              <a class="nav-link text-white" href="#">QUIENES SOMOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Nuestra historia</a>
+              <a class="nav-link text-white" href="#">NUESTRA HISTORIA</a>
             </li>
           </ul>
         </div>
@@ -56,9 +56,7 @@
         Nuestra experiencia y compromiso garantizan unos resultados
         excepcionales para particulares, empresas y empresas aseguradoras
       </p>
-      <button type="button" class="btn btn-outline-primary p-3">
-        Contacto
-      </button>
+      <button type="button" class="btn btn-outline-primary">Contacto</button>
     </section>
 
     <section class="container_testimonial">
@@ -76,7 +74,7 @@
       <!-- --------------------- ESPECIALIDADES --------------------- -->
       <article class="container_especialidades1">
         <h2>NUESTRAS ESPECIALIDADES</h2>
-        <p>- Derecho de RC - Derecho de daños  - Derecho del seguro</p>
+        <p>- Derecho de RC - Derecho de daños - Derecho del seguro</p>
         <!-- <img
           src="./assets/images/especialidades_photo.jpg"
           alt="especialidades"
@@ -92,11 +90,12 @@
           <li>Reclamación y Defensa por Accidentes</li>
           <li>Responsabilidad Civil Decenal y de la Edificación</li>
           <li>Responsabilidad Civil Patronal</li>
-          <li>
-            Responsabilidad civil autos y accidentes de tráfico
-          </li>
+          <li>Responsabilidad civil autos y accidentes de tráfico</li>
           <li>Reclamación Seguros</li>
-          <li>Reclamación y Defensa por Daños (Responsabilidad por Productos Defectuosos)</li>
+          <li>
+            Reclamación y Defensa por Daños (Responsabilidad por Productos
+            Defectuosos)
+          </li>
         </ul>
         <!-- <img src="./assets/images/pic02.jpg" alt="especialidades" /> -->
       </article>
@@ -104,35 +103,41 @@
 
     <!-- ---------------------------- EMERITA LEGAL SECTION ---------------------------- -->
     <section class="container_emerita">
-      <h2>ABOGADOS DE PRESTIGIO EN BARCELONA</h2>
-      <h3>
-        Certificados como los mejores por análisis de más de 200 sentencias de
-        nuestro bufete.
-      </h3>
-      <p>
-        Emérita Legal que se dedica a analizar las sentencias emitidas por los
-        tribunales en diferentes casos, con el fin de identificar patrones y
-        tendencias en la jurisprudencia. Este análisis es muy útil para evaluar
-        la eficacia de los abogados y bufetes en la resolución de casos. <br />
-        <br/>
-        En Bufete Sánchez Meya, hemos sido evaluados por Emérita Legal, la cual
-        ha analizado más de 200 sentencias en las que hemos participado. Esto ha
-        permitido certificar que nuestros abogados son los mejores de Barcelona
-        en diversas áreas del derecho del seguro, lo que nos permite garantizar
-        a nuestros clientes un servicio de alta calidad y una alta probabilidad
-        de éxito en sus casos.
-      </p>
-      <button type="button" class="btn btn-outline-primary p-2">LINK</button>
-      <img src="./assets/images/emeritas.png" alt="emeritas foto" />
+      <div class="container_content_emerita">
+        <h2>ABOGADOS DE PRESTIGIO EN BARCELONA</h2>
+        <h3>
+          Certificados como los mejores por análisis de más de 200 sentencias de
+          nuestro bufete.
+        </h3>
+        <p>
+          Emérita Legal que se dedica a analizar las sentencias emitidas por los
+          tribunales en diferentes casos, con el fin de identificar patrones y
+          tendencias en la jurisprudencia. Este análisis es muy útil para
+          evaluar la eficacia de los abogados y bufetes en la resolución de
+          casos. <br />
+          <br />
+          En Bufete Sánchez Meya, hemos sido evaluados por Emérita Legal, la
+          cual ha analizado más de 200 sentencias en las que hemos participado.
+          Esto ha permitido certificar que nuestros abogados son los mejores de
+          Barcelona en diversas áreas del derecho del seguro, lo que nos permite
+          garantizar a nuestros clientes un servicio de alta calidad y una alta
+          probabilidad de éxito en sus casos.
+        </p>
+        <button type="button" class="btn btn-outline-primary p-2">LINK</button>
+      </div>
+      <div class="container_img_emerita">
+        <img src="./assets/images/emeritas.png" alt="emeritas foto" />
+      </div>
     </section>
 
     <!-- ------------------------ PRINCIPALES CLIENTES ------------------------- -->
     <section class="container_clientes">
       <h2>Nuestros principales clientes</h2>
-      <img src="./assets/images/catalana-occidente.png" alt="cliente1" />
-      <img src="./assets/images/adeslas.jpg" alt="cliente2" />
-      <img src="./assets/images/asefa.jpg" alt="cliente3" />
-
+      <div class="container_img_clientes">
+        <img src="./assets/images/catalana-occidente.png" alt="cliente1" />
+        <img src="./assets/images/adeslas.jpg" alt="cliente2" />
+        <img src="./assets/images/asefa.jpg" alt="cliente3" />
+      </div>
     </section>
 
     <!-- ----------------------- FORMULARIO DE CONTACTO ------------------------ -->
@@ -144,20 +149,27 @@
       </p>
       <p>
         +34 93 321 04 96 <br />
-        <br/>
-        <span style="text-decoration: underline; color:black;">secretaria@bufetesanchezmeya.es</span> <br />
-        <br/>
+        <br />
+        <span style="text-decoration: underline; color: black"
+          >secretaria@bufetesanchezmeya.es</span
+        >
+        <br />
+        <br />
         Avenida de Sarriá 30 6º 1ª, Barcelona
       </p>
       <form action="">
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" />
+          <label for="exampleFormControlInput1" class="form-label"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+          />
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email</label
-          >
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
           <input
             type="email"
             class="form-control"
@@ -174,18 +186,23 @@
             rows="3"
           ></textarea>
         </div>
-        <p>This site is protected by reCAPTCHA and the Google <span class="form_bold">Privacy Policy</span> and <span class="form_bold">Terms of Service</span> apply.</p>
-      <button type="button" class="btn btn-outline-primary p-2">ENVIAR</button>
-
+        <p>
+          This site is protected by reCAPTCHA and the Google
+          <span class="form_bold">Privacy Policy</span> and
+          <span class="form_bold">Terms of Service</span> apply.
+        </p>
+        <button type="button" class="btn btn-outline-primary p-2">
+          ENVIAR
+        </button>
       </form>
     </section>
 
     <!-- --------------------------- FOOTER SECTION ---------------------------- -->
     <footer class="container_footer">
-        <h4>Bufete Sánchez Meya</h4>
-        <p>INICIO</p>
+      <h4>Bufete Sánchez Meya</h4>
+      <p>INICIO</p>
     </footer>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
