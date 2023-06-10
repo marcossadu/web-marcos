@@ -15,7 +15,7 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
 h3 {
   font-size: 1.7rem;
   font-weight: 700;
-  color: rgb(41, 41, 41);
+  color: rgb(255, 255, 255);
 }
 
 h4 {
@@ -39,7 +39,12 @@ h4 {
 /* --------------------------------- HEADER --------------------------------- */
 
 .navbar {
-  background-color: var(--azul);
+  background-color: #003d5f;
+}
+.navbar-collapse {
+
+flex-grow:0
+ 
 }
 
 .hamburguerX {
@@ -50,7 +55,7 @@ h4 {
 .container_main {
   position: relative;
   height: auto;
-  padding: 60px 30px;
+  padding: 90px 40px;
   width: 100%;
 }
 
@@ -67,6 +72,10 @@ h4 {
   opacity: 0.4; /* Ajusta la opacidad según tu preferencia */
   z-index: -1;
 }
+
+
+
+
 
 .container_main h1 {
   font-size: 3rem;
@@ -93,6 +102,13 @@ h4 {
   padding: 60px 30px;
   width: 100%;
 }
+
+.container_testimonial h3:first-child{
+
+  color:black
+}
+
+
 
 .container_testimonial p:first-child {
   font-size: 1.6rem;
@@ -154,6 +170,7 @@ h4 {
 .container_servicios {
   padding: 60px 30px;
   background-color: var(--grisFondo);
+  font-size: 16px;
 }
 
 .container_servicios h2 {
@@ -216,6 +233,9 @@ h4 {
   background-color: white;
   padding: 60px 30px;
   width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .container_form label,
@@ -250,6 +270,9 @@ h4 {
   background-color: rgb(107, 107, 107);
   padding: 40px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container_footer h4 {
@@ -428,4 +451,27 @@ h4 {
     border: 20px solid white;
     /* padding: 50px; */
   }
+
+  .container_form {
+    display: flex;
+    flex-direction: row-reverse!important;
+    /* background-color: black; */
+  }
+
+
+  /* ---------------------------- FORMULARIO MOBILE --------------------------- */
+  
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  color:#0089d1
 }
