@@ -458,6 +458,7 @@ flex-grow:0
     /* background-color: black; */
   }
 
+ 
 
   /* ---------------------------- FORMULARIO MOBILE --------------------------- */
   
@@ -472,6 +473,9 @@ flex-grow:0
   color: white;
 }
 
-.btn a:hover {
+#footer_button a:hover {
   color:#0089d1
 }
+
+
+
