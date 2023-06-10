@@ -1,6 +1,4 @@
-
-
-  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
   --azul: #003d5f;
@@ -47,9 +45,7 @@ h4 {
   background-color: #003d5f;
 }
 .navbar-collapse {
-
-flex-grow:0
- 
+  flex-grow: 0;
 }
 
 .hamburguerX {
@@ -78,10 +74,6 @@ flex-grow:0
   z-index: -1;
 }
 
-
-
-
-
 .container_main h1 {
   font-size: 3rem;
   font-weight: 400;
@@ -108,12 +100,9 @@ flex-grow:0
   width: 100%;
 }
 
-.container_testimonial h3:first-child{
-
-  color:black
+.container_testimonial h3:first-child {
+  color: black;
 }
-
-
 
 .container_testimonial p:first-child {
   font-size: 1.6rem;
@@ -173,7 +162,20 @@ flex-grow:0
 
 /* ----------------------------ABOGADOS SECCION --------------------------- */
 .container_servicios {
-  /* padding: 60px 30px; */
+  padding: 2rem;
+  background-color: var(--grisFondo);
+}
+.divAbuelos,
+.divFamilia {
+  display: flex;
+  flex-direction: column;
+}
+
+.divAbuelos img,
+.divFamilia img {
+  width: 100%;
+}
+/* .container_servicios {
   background-color: var(--grisFondo);
   font-size: 16px;
   display: flex;
@@ -187,6 +189,7 @@ flex-grow:0
   color: white;
   margin-bottom: 30px;
 }
+
 
 .divAbuelos{
 
@@ -202,16 +205,14 @@ flex-grow:0
 
 .divAbuelos img,
 .divFamilia img {
-width: 500px;
+width: 200px;
 }
 
 .divAbuelos h3,
 .divFamilia h3 {
 font-size: 1.2rem;
 margin-top: 1rem;
-}
-
-
+} */
 
 /* -------------------------- EMERITA LEGAL SECTION ------------------------- */
 .container_emerita {
@@ -314,7 +315,7 @@ margin-top: 1rem;
   color: rgb(255, 255, 255);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   /* ----------------------------- CONTAINER MAIN ----------------------------- */
   .container_main {
     position: relative;
@@ -405,42 +406,82 @@ margin-top: 1rem;
     padding-bottom: 5rem;
     gap: 20px;
   }
-  
+
   .container_servicios h2 {
     color: white;
     margin-top: 40px;
   }
-  
-  .divAbuelos{
-    display:flex;
-    gap: 40px;
 
-  }
-  
-  .divFamilia{
-    display:flex;
+  .divAbuelos {
+    display: flex;
+    flex-direction: row;
     gap: 40px;
-
   }
-  
-  
+
+  .divFamilia {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
   .divFamilia img {
-  width: 400px;
+    width: 400px;
   }
   .divAbuelos img {
     width: 500px;
   }
-  
+
   .divAbuelos h3,
   .divFamilia h3 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .container_form {
     display: flex;
-    flex-direction: row-reverse!important;
+    flex-direction: row-reverse !important;
     /* background-color: black; */
   }
+
+  .comprometidos_legal {
+    display: flex;
+    flex-direction: row!important;
+    background-color: white;
+    align-items: center;
+    padding: 2rem;
+    gap: 50px;
+  }
+
+  .comprometidos_legal2 {
+    display: flex; 
+    flex-direction: column; 
+    width: 50%;
+  }
+
+  .comprometidos_img {
+    width: 40%;
+  }
+}
+
+.comprometidos_legal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  padding: 2rem;
+  gap: 50px;
+}
+
+.comprometidos_legal2 {
+  display: flex; 
+  flex-direction: column;
+}
+
+.comprometidos_img {
+  width: fit-content;
+}
+
+.comprometidos_img img {
+  width: 100%;
 }
 
 .container_form {
@@ -448,11 +489,10 @@ margin-top: 1rem;
   flex-direction: column;
 }
 
-
 .btn a {
   color: white;
 }
 
 .btn a:hover {
-  color:#0089d1
+  color: #0089d1;
 }
