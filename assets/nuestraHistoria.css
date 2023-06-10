@@ -271,6 +271,9 @@ flex-grow:0
   background-color: rgb(107, 107, 107);
   padding: 40px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container_footer h4 {
@@ -449,4 +452,34 @@ flex-grow:0
     border: 20px solid white;
     /* padding: 50px; */
   }
+
+  .probando {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .probando img {
+    width: auto;
+    height: auto;
+  }
+
+  .container_form {
+    display: flex;
+    flex-direction: row-reverse!important;
+    /* background-color: black; */
+  }
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  color:#0089d1
 }

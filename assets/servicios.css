@@ -198,6 +198,7 @@ margin-top:10px;
 .container_servicios h2 {
   color: white;
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .container_servicios ul li {
@@ -207,7 +208,7 @@ margin-top:10px;
 }
 
 .container_servicios ul li p {
-  font-size: 17px;
+  font-size: 15px;
 }
 /* -------------------------- EMERITA LEGAL SECTION ------------------------- */
 .container_emerita {
@@ -345,27 +346,11 @@ margin-top:10px;
   }
 
   /* -------------------------- TESTIMONIALS SECTION -------------------------- */
-  .container_testimonial {
+  .container_testimonial1 {
     background-color: rgb(255, 255, 255);
     padding: 60px 30px;
-  }
-  .container_testimonialDiv{
-    margin-top:10px;
-      margin-left: 48%;
-    
-    }
-  .container_testimonial p:first-child {
-    font-size: 1.6rem;
-    color: rgb(41, 41, 41);
-    font-weight: 700;
-    padding-right: 30%;
-    padding-left: 10%;
-  }
-
-  .container_testimonial p:last-child {
-    color: rgb(41, 41, 41);
-    font-size: 1.2rem;
-    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
   }
 
   /* -------------------------------- ESPECIALIDADES ------------------------------- */
@@ -484,8 +469,19 @@ margin-top:10px;
     /* padding: 50px; */
   }
 
+  .container_form {
+    display: flex;
+    flex-direction: row-reverse!important;
+    /* background-color: black; */
+  }
+
 
   /* --------------------------------- FOOTER --------------------------------- */
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn a {
@@ -494,4 +490,11 @@ margin-top:10px;
 
 .btn a:hover {
   color:#0089d1
+}
+
+.container_testimonial1 {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
 }
